@@ -32,8 +32,7 @@ class M1 extends Template {
 
    @Override
    int apply(int i) {
-      // TODO: Replace the statement below with your answer.
-      return 0;
+      return i;
    }
 }
 
@@ -41,7 +40,6 @@ class M2 extends Template {
 
    @Override
    int apply(int i) {
-      // TODO: Replace the statement below with your answer.
-      return 0;
+      return i * i;
    }
 }
