@@ -19,8 +19,8 @@ public class A {
 abstract class Template {
    int common(int min, int max) {
       int sum = 0;
-      // TODO: Replace the FOR statement below with your answer.
       for (int i = min; i <= max; i++) {
+         sum += apply(i);
       }
       return sum;
    }
