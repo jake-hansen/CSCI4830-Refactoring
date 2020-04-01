@@ -19,6 +19,13 @@ public class A {
    // ? extractedMethod(?) {
    //
    // }
+
+   <T extends List<T>> void commonMethod(List<T> list, String p) {
+      for (T t : list) {
+         if (t.contains(p))
+            System.out.println(t);
+      }
+   }
 }
 
 class Node {
