@@ -4,23 +4,18 @@ import java.util.List;
 
 public class A {
    Node m1(List<Node> nodes, String p) {
-      // TODO: Your answer
+      commonMethod(nodes, p);
       // other implementation
       return null;
    }
 
    Edge m2(List<Edge> edgeList, String p) {
-      // TODO: Your answer
+      commonMethod(edgeList, p);
       // other implementation
       return null;
    }
 
-   // TODO: Your answer
-   // ? extractedMethod(?) {
-   //
-   // }
-
-   <T extends List<T>> void commonMethod(List<T> list, String p) {
+   <T extends Graph> void commonMethod(List<T> list, String p) {
       for (T t : list) {
          if (t.contains(p))
             System.out.println(t);
