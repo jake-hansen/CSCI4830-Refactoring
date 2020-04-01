@@ -28,18 +28,16 @@ public class A {
    }
 }
 
-class Node {
+class Graph {
    String name;
 
-   public boolean contains(String p) {
-      return name.contains(p);
-   }
+   public boolean contains(String p) { return name.contains(p); }
 }
 
-class Edge {
-   String name;
+class Node extends Graph {
 
-   public boolean contains(String p) {
-       return name.contains(p);
-   }
+}
+
+class Edge extends Graph {
+
 }
